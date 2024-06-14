@@ -1,6 +1,7 @@
 # tradesLog
 
-
+# website link :
+ http://tradeslog.pythonanywhere.com/
 
 A platform to enter and save the details of a Trade(crypto trading)
 ## Options:
