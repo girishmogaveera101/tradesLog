@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css file attach -->
+     <link rel="stylesheet" type="text/css" href="../static/styles/index.css"/>
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <td>
+                <p class="headerMain">tradeLogs</p>
+            </td>
+        </tr>
+    </table>
+    <a href="/allTrades" method="POST">
+        <p id="allTrades">See all trades</p>
+    </a>
+
+    <!-- form data input -->
+    <form action="/dataEntry" method="post">
+    <table id="table2">
+        <tr>
+            <td colspan="2" style="border-bottom: 1px solid rgb(161, 161, 161);">
+                    <p id="dataEnter">Enter the Trade Details</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Coin</p>
+            </td>
+            <td>
+                <select id="sel1" name="coin">
+                    <option>BTC</option>
+                    <option>ETH</option>
+                    <option>SOL</option>
+                    <option>WLD</option>
+                    <option>MATIC</option>
+                    <option>DOGE</option>
+                    <option>MEME</option>
+                    <option>LTC</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Strategy</p>
+            </td>
+            <td>
+                <select id="sel1" name="strategy">
+                    <option>Support_and_Resistance</option>
+                    <option>Trendline</option>
+                    <option>FVG</option>
+                    <option>Market_DIP</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Entry price</p>
+            </td>
+            <td>
+                <input class="dataInput" type="number" name="entryPrice"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Target price</p>
+            </td>
+            <td>
+                <input class="dataInput" type="number" name="targetPrice"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Stop loss Price</p>
+            </td>
+            <td>
+                <input class="dataInput" type="number" name="stopLossPrice"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Entry Date</p>
+            </td>
+            <td>
+                <input class="dataInput" type="date" name="entryDate"/>
+            </td>
+        </tr>
+        <tr>
+            font-style: italic;
+            <td>
+                <p class="data">Close Date</p>
+            </td>
+            <td>
+                <input class="dataInput" type="date" name="closeDate"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">PNL</p>
+            </td>
+            <td>
+                <input class="dataInput" type="number" name="pnl"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Return(%)</p>
+            </td>
+            <td>
+                <input class="dataInput" type="number" name="returns"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="data">Comments</p>
+            </td>
+            <td>
+                <input class="dataInput" type="text" name="comments"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border-top:1px solid rgb(161, 161, 161);text-align: center;">
+                <input type="submit" id="makeEntry" onclick="message1()" value="Make Entry"/>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+<script>
+    function message1(){
+        alert('Entry has been Made..')
+    }
+</script>
+</html>

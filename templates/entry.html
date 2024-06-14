@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Template Example</title>
+    <link rel="stylesheet" href="../static/styles/entry.css"/>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="card-container" id="card-container"></div>
+
+    <script>
+        // Function to create a card element
+        function createCard(coin,targetPrice,entryPrice,stopLossPrice,strategy,entryDate,closeDate,pnl,return1,comment ) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            // card.innerHTML = `<h2><u>${title}</u></h2><p>${content}</p>`;
+
+            // card.innerHTML = 
+            // `<table>
+            //     <tr>
+            //         <td>
+            //             <p>${title}</p>
+            //         </td>
+            //         <td>
+            //             <p>${content}</p>
+            //         </td>
+            //     </tr>
+            // </table>`;
+
+
+
+            card.innerHTML = 
+            `<table id="table2">
+        <tr>
+            <td>
+                <p id="label1">Target Price</p>
+            </td>
+            <td>
+                <p id="targetPrice">${targetPrice}</p>
+            </td>
+            <td colspan="2" rowspan="3">
+                <p id="coin">${coin}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label2">Stop Loss Price</p>
+            </td>
+            <td>
+                <p id="stopLossPrice">${stopLossPrice}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label3">Entry Price</p>
+            </td>
+            <td>
+                <p id="entryPrice">${entryPrice}</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label4">Strategy</p>
+            </td>
+            <td colspan="2">
+                <p id="Strategy">${strategy}</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label5">Entry Date</p>
+            </td>
+            <td colspan="2">
+                <p id="entryDate">${entryDate}</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label6">Close date</p>
+            </td>
+            <td colspan="2">
+                <p id="closeDate">${closeDate}</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label7">PNL</p>
+            </td>
+            <td colspan="2">
+                <p id="pnl">${pnl}</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label8">Returns(%)</p>
+            </td>
+            <td colspan="2">
+                <p id="returns">${return1}</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="label9">Comments</p>
+            </td>
+            <td colspan="3">
+                <p id="comments">${comment}</p>
+            </td>
+        </tr>
+    </table>`;
+
+
+
+            return card;
+        }
+
+        // Function to display multiple cards
+        function displayCards(cards) {
+            const container = document.getElementById('card-container');
+            cards.forEach(cardData => {
+                const card = createCard(cardData.coin, cardData.targetPrice, cardData.entryPrice, cardData.stopLossPrice, cardData.strategy, cardData.entryDate, cardData.closeDate, cardData.pnl, cardData.return1, cardData.comment);
+                container.appendChild(card);
+            });
+        }
+
+        // Get the values from Flask and display the cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = {{ cards | tojson }};
+            displayCards(cards);
+        });
+
+
+
+    </script>
+</body>
+</html>
