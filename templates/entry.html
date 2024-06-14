@@ -10,6 +10,17 @@
     </style>
 </head>
 <body>
+    <table id="table1">
+        <tr>
+            <td style="width: 20%; text-align: center;">
+                <a href="/"><p class="back"><</p></a>
+            </td>
+            <td style="text-align: left;">
+                <p class="headerMain">tradeLogs</p>
+            </td>
+        </tr>
+    </table>
+    <div id="space"></div>
     <div class="card-container" id="card-container"></div>
 
     <script>
@@ -34,7 +45,8 @@
 
 
             card.innerHTML = 
-            `<table id="table2">
+            `
+            <table id="table2">
         <tr>
             <td>
                 <p id="label1">Target Price</p>
@@ -67,7 +79,7 @@
                 <p id="label4">Strategy</p>
             </td>
             <td colspan="2">
-                <p id="Strategy">${strategy}</p>
+                <p id="strategy">${strategy}</p>
             </td>
             <td></td>
         </tr>

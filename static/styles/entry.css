@@ -13,21 +13,31 @@ a{
     height: 100px;
     width: 100%;
     top: 0%;
-    position: fixed;
+    position:fixed ;
     border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.back{
+    color: white;
+    font-weight: lighter;
+    font-family: monospace;
+    letter-spacing: 4px;
+    font-size: 20px;
 }
 
 .headerMain{
     color: white;
     font-weight: bolder;
+    margin-left: 10px;
     font-family: monospace;
     letter-spacing: 6px;
     font-size: 30px;
-    text-align: center;
 }
 
 
-
+#space{
+    height: 130px;
+}
 
 #table2{
     height: 400px;
@@ -36,12 +46,13 @@ a{
     border-radius: 5px;
     font-family: monospace;
     color: white;
-    margin-top: 140px;
+    margin-bottom: 50px;
     background-color: rgb(56, 56, 56);
 }
 #table2 td{
     border: 0px solid white;
     text-align: center;
+    padding: 0px 20px 0px 0px;
     width: 25%;
 }
 #coin{
@@ -52,54 +63,63 @@ a{
 
 #label1{
     font-size: 15px;
+    font-weight: bold;
     text-align: right;
     color: greenyellow;
 }
 
 #label2{
     font-size: 15px;
+    font-weight: bold;
     color: rgb(255, 31, 42);
     text-align: right;
 }
 
 #label3{
     font-size: 15px;
+    font-weight: bold;
     color: rgb(255, 169, 99);
     text-align: right;
 }
 
 #label4{
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
     color: white;
     text-align: right;
 }
 
 #label5{
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
     color: white;
     text-align: right;
 }
 
 #label6{
-    font-size: 13px;
+    font-size: 15px;
     color: white;
+    font-weight: bold;
     text-align: right;
 }
 
 #label7{
     font-size: 20px;
+    font-weight: bold;
     color: rgb(126, 255, 126);
     text-align: right;
 }
 
 #label8{
     font-size: 17px;
+    font-weight: bold;
     color: rgb(123, 255, 123);
     text-align: right;
 }
 
 #label9{
     font-size: 15px;
+    font-weight: bold;
     color: rgb(119, 235, 255);
     text-align: right;
 }
@@ -107,6 +127,7 @@ a{
 
 #targetPrice{
     font-size: 16px;
+    text-align: left;
     color: rgb(60, 255, 0);
     font-weight: bolder;
 }
@@ -114,29 +135,42 @@ a{
 #stopLossPrice{
     font-size: 16px;
     color: red;
+    text-align: left;
     font-weight: bolder;
 }
 
 #entryPrice{
     font-size: 16px;
+    text-align: left;
     color: rgb(255, 169, 99);
     font-weight: bolder;
 }
 
+#strategy,#entryDate,#closeDate{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
 #pnl{
     font-size: 22px;
+    text-align: left;
+    text-align: left;
     color: rgb(126, 255, 126);
     font-weight: bolder;
 }
 
 #returns{
     font-size: 22px;
+    text-align: left;
     color: rgb(123, 255, 123);
     font-weight: bolder;
 }
 
 #comments{
     font-size: 13px;
+    text-align: left;
     color: rgb(119, 235, 255);
     font-weight: bolder;
 }
