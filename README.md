@@ -1,6 +1,6 @@
-## tradesLog
+### tradesLog
 A platform to enter and save the details of a Trade(crypto trading)
-#Options:
+## Options:
 1. Coin name
 2. Entry Price
 3. Target Price
@@ -12,7 +12,7 @@ A platform to enter and save the details of a Trade(crypto trading)
 9. return
 10. comments
 
-#Languages used 
+## Languages used 
 1. Flask
 2. HTML
 3. CSS
