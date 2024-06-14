@@ -1,4 +1,7 @@
-### tradesLog
+# tradesLog
+
+### TRADESLOG
+
 A platform to enter and save the details of a Trade(crypto trading)
 ## Options:
 1. Coin name
