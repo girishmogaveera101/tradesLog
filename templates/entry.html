@@ -20,8 +20,38 @@
             </td>
         </tr>
     </table>
+    
+
+
+    <button id="updateEntry" onclick="updateMenu()">Update a Trade</button>
+
+
+
+
+    <table id="updateEntryCard">
+        <tr>
+            <td>
+                <button onclick="closeUpdateMenu()">X</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Hii</p>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <!-- here is the container in which all cards are displayed using js -->
     <div id="space"></div>
     <div class="card-container" id="card-container"></div>
+
+
+
+
+
     <table id="footer">
         <tr>
             <td>
@@ -65,6 +95,13 @@
         </tr>
     </table>
 
+
+
+
+
+
+
+
     <script>
         // Function to create a card element
         function createCard(coin,targetPrice,entryPrice,stopLossPrice,strategy,entryDate,closeDate,pnl,return1,comment ) {
@@ -74,7 +111,7 @@
 
             card.innerHTML = 
             `
-            <table id="table2" onmousehover="hover(this)">
+            <table id="table2">
         <tr>
             <td>
                 <p id="label1">Target Price</p>
@@ -106,46 +143,41 @@
             <td>
                 <p id="label4">Strategy</p>
             </td>
-            <td colspan="2">
+            <td colspan="3">
                 <p id="strategy">${strategy}</p>
             </td>
-            <td></td>
         </tr>
         <tr>
             <td>
                 <p id="label5">Entry Date</p>
             </td>
-            <td colspan="2">
+            <td colspan="3">
                 <p id="entryDate">${entryDate}</p>
             </td>
-            <td></td>
         </tr>
         <tr>
             <td>
                 <p id="label6">Close date</p>
             </td>
-            <td colspan="2">
+            <td colspan="3">
                 <p id="closeDate">${closeDate}</p>
             </td>
-            <td></td>
         </tr>
         <tr>
             <td>
                 <p id="label7">PNL</p>
             </td>
-            <td colspan="2">
+            <td colspan="3">
                 <p id="pnl">${pnl}</p>
             </td>
-            <td></td>
         </tr>
         <tr>
             <td>
                 <p id="label8">Returns(%)</p>
             </td>
-            <td colspan="2">
+            <td colspan="3">
                 <p id="returns">${return1}</p>
             </td>
-            <td></td>
         </tr>
         <tr>
             <td>
@@ -156,9 +188,6 @@
             </td>
         </tr>
     </table>`;
-
-
-
             return card;
         }
 
@@ -170,20 +199,20 @@
                 container.appendChild(card);
             });
         }
-
-        function hover(x){
-            x.style.background="background: linear-gradient(140deg,rgb(32, 32, 32) 60%, rgb(44, 44, 44) 40%);";
-        }
-
-        document.addEventListener
-
-        // Get the values from Flask and display the cards
+        // Get the values from Flask and display the cards on loading
         document.addEventListener('DOMContentLoaded', () => {
             const cards = {{ cards | tojson }};
             displayCards(cards);
         });
 
 
+        function updateMenu(){
+            document.getElementById('updateEntryCard').style="display:block";
+        }
+
+        function closeUpdateMenu(){
+            document.getElementById('updateEntryCard').style="display:none";
+        }
 
     </script>
 </body>
