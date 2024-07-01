@@ -40,15 +40,19 @@ a{
 }
 
 #table2{
-    height: 400px;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 0px 0px 25px rgb(37, 37, 37);
     border-radius: 5px;
     font-family: monospace;
-    color: white;
+    color: rgb(225, 74, 255);
     margin-bottom: 50px;
-    background-color: rgb(56, 56, 56);
+    background: linear-gradient(110deg,rgb(32, 32, 32) 60%, rgb(44, 44, 44) 40%);
 }
+
+
+
+
 #table2 td{
     border: 0px solid white;
     text-align: center;
@@ -56,7 +60,7 @@ a{
     width: 25%;
 }
 #coin{
-    font-size: 50px;
+    font-size: 60px;
     color: yellow;
     font-weight: bolder;
 }
@@ -85,20 +89,20 @@ a{
 #label4{
     font-size: 15px;
     font-weight: bold;
-    color: white;
+    color: rgb(245, 136, 255);
     text-align: right;
 }
 
 #label5{
     font-size: 15px;
     font-weight: bold;
-    color: white;
+    color: rgb(245, 136, 255);
     text-align: right;
 }
 
 #label6{
     font-size: 15px;
-    color: white;
+    color: rgb(245, 136, 255);
     font-weight: bold;
     text-align: right;
 }
@@ -148,7 +152,7 @@ a{
 
 #strategy,#entryDate,#closeDate{
     font-size: 15px;
-    color: white;
+    color: rgb(245, 136, 255);
     font-weight: bold;
     text-align: left;
 }

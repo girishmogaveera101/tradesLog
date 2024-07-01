@@ -30,23 +30,9 @@
             card.className = 'card';
             // card.innerHTML = `<h2><u>${title}</u></h2><p>${content}</p>`;
 
-            // card.innerHTML = 
-            // `<table>
-            //     <tr>
-            //         <td>
-            //             <p>${title}</p>
-            //         </td>
-            //         <td>
-            //             <p>${content}</p>
-            //         </td>
-            //     </tr>
-            // </table>`;
-
-
-
             card.innerHTML = 
             `
-            <table id="table2">
+            <table id="table2" onmousehover="hover(this)">
         <tr>
             <td>
                 <p id="label1">Target Price</p>
@@ -142,6 +128,12 @@
                 container.appendChild(card);
             });
         }
+
+        function hover(x){
+            x.style.background="background: linear-gradient(140deg,rgb(32, 32, 32) 60%, rgb(44, 44, 44) 40%);";
+        }
+
+        document.addEventListener
 
         // Get the values from Flask and display the cards
         document.addEventListener('DOMContentLoaded', () => {
