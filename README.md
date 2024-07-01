@@ -22,6 +22,6 @@ A platform to enter and save the details of a Trade(crypto trading)
 3. CSS
 4. Javascript
 
-#Pending feathures
+# Pending features
 1. multi users
 2. Update entry
