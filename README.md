@@ -21,3 +21,7 @@ A platform to enter and save the details of a Trade(crypto trading)
 2. HTML
 3. CSS
 4. Javascript
+
+#Pending feathures
+1. multi users
+2. Update entry
