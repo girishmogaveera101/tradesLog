@@ -16,7 +16,7 @@ A platform to enter and save the details of a Trade(crypto trading)
 9. return
 10. comments
 
-## Languages used 
+## Teckstack
 1. Flask
 2. HTML
 3. CSS
