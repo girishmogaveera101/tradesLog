@@ -1,8 +1,4 @@
 # tradesLog
-
-# website link :
- https://tradeslog.pythonanywhere.com/
-
 A platform to enter and save the details of a Trade(crypto trading)
 ### Entry variables:
 1. Coin name
@@ -25,3 +21,6 @@ A platform to enter and save the details of a Trade(crypto trading)
 #### Pending features
 1. multi users
 2. Update entry
+
+#### website link :
+ https://tradeslog.pythonanywhere.com/
