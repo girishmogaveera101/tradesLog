@@ -1,3 +1,2 @@
-BTC<>Support_and_Resistance<>500<>16540<>500<>2024-09-03<>2024-04-06<>-167<>-1<>took loss closed posirion at entry price
 BTC<>Support_and_Resistance<>42<>234<>234<>0342-04-02<>4224-04-03<>232<>34<>42f34f4
-BTC<>Support_and_Resistance<>42<>234<>234<>0342-04-02<>4224-04-03<>232<>34<>42f34f4
+MATIC<>FVG<>42<>7321<>234<>2222-02-02<>0033-02-03<>2<>12<>hii
