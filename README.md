@@ -4,7 +4,7 @@
  https://tradeslog.pythonanywhere.com/
 
 A platform to enter and save the details of a Trade(crypto trading)
-## Options:
+### Entry variables:
 1. Coin name
 2. Entry Price
 3. Target Price
@@ -16,12 +16,12 @@ A platform to enter and save the details of a Trade(crypto trading)
 9. return
 10. comments
 
-## Teckstack
+### Teckstack
 1. Flask
 2. HTML
 3. CSS
 4. Javascript
 
-# Pending features
+#### Pending features
 1. multi users
 2. Update entry
