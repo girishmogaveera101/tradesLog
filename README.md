@@ -9,7 +9,7 @@ A platform to enter and save the details of a Trade(crypto trading)
 6. Entry Date
 7. Close Date
 8. pnl
-9. return
+9. Position Amount 
 10. comments
 
 ### Teckstack
