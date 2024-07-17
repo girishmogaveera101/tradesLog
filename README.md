@@ -23,5 +23,6 @@ A platform to enter and save the details of a Trade(crypto trading)
 2. Update entry
 
 #### website link :
- https://tradeslog.pythonanywhere.com/
+https://tradeslog.pythonanywhere.com/
+
 for mobile
